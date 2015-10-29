@@ -47,6 +47,9 @@ class LaunchMeAppDelegate: NSObject, UIApplicationDelegate {
         
         return true
     }
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        return application(app, openURL: url, sourceApplication: "", annotation: options)
+    }
     
     // -------------------------------------------------------------------------------
     //	extractColorFromLaunchURL:
