@@ -47,7 +47,7 @@ class RootViewController: UIViewController {
     //  B components of aColor, and updating urlLabel to display the corresponding
     //  URL for aColor.
     // -------------------------------------------------------------------------------
-    private func updateWithColor(var aColor: UIColor?) {
+    private func updateWithColor(_aColor: UIColor?) {
         // There is a possibility that -getRed:green:blue:alpha: could fail if aColor
         // is not in a compatible color space.  In such a case, the arguments are not
         // modified.  Having default values will allow for a more graceful failure
@@ -57,6 +57,7 @@ class RootViewController: UIViewController {
         var blue: CGFloat = 0.0
         var alpha: CGFloat = 0.0
         
+        var aColor = _aColor
         if !(aColor?.getRed(&red, green: &green, blue: &blue, alpha: &alpha) ?? false) {
             // While setting default values for red, green, blue and alpha
             // guards against undefined results if -getRed:green:blue:alpha:
