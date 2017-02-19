@@ -1,0 +1,6 @@
+#import <Availability.h>
+
+#ifdef __OBJC__
+    @import Foundation;
+    @import UIKit;
+#endif
