@@ -11,7 +11,7 @@ Some faults caused by my translation may exist. Not all features tested.
 You should not contact to Apple or SHLab(jp) about any faults caused by my translation.
 
 ## Build Requirements
-iOS 10 SDK, Xcode 8.2.1
+iOS 10 SDK, Xcode 8.3.3
 
 
 ## Runtime Requirements
